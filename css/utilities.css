@@ -1,0 +1,151 @@
+.text-primary {
+  color: #28a745;
+}
+
+.text-secondary {
+  color: #0284d0;
+}
+
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 30px;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn-primary,
+.bg-primary {
+  background: #28a745;
+  color: white;
+}
+
+.btn-secondary,
+.bg-secondary {
+  background: #0284d0;
+  color: white;
+}
+
+.btn-dark,
+.bg-dark {
+  background: #333;
+  color: white;
+}
+
+.btn-light,
+.bg-light {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.btn-outline {
+  border: 1px solid white;
+}
+
+/* Flex Items */
+
+.flex-items {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  height: 100%;
+}
+
+/* The direct div child */
+.flex-items > div {
+  padding: 20px;
+}
+
+/* Flex Columns */
+
+.flex-columns.flex-reverse .row {
+  flex-direction: row-reverse;
+}
+
+.flex-columns .row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.flex-columns .column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.flex-columns .column .column-1,
+.flex-columns .column .column-2 {
+  height: 100%;
+}
+
+.flex-columns img {
+  width: 100%;
+  height: 100%;
+  /* This will fix the image from getting all pixelated when you increase/decrease screen size */
+  object-fit: cover;
+}
+
+.flex-columns .column-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 30px;
+}
+
+.flex-columns h2 {
+  font-size: 40px;
+  font-weight: 100;
+}
+
+.flex-columns h4 {
+  margin-bottom: 10px;
+}
+
+.flex-columns p {
+  margin: 20px 0;
+}
+
+/* Section Header */
+.section-header {
+  display: flex;
+  flex-direction: column;
+  height: 40vh;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  text-align: center;
+}
+
+.section-header h2 {
+  font-size: 40px;
+  margin: 20px 0px;
+}
+
+.section-padding {
+  padding: 20px 20px 40px;
+}
+
+/* Flex Grid */
+
+.flex-grid .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 5px;
+}
+
+.flex-grid .column {
+  /*  We want each column to be 25% each bc four cols  -- instead of flex 1 */
+  flex: 25%;
+  padding: 0px 5px;
+  max-width: 25%;
+}
